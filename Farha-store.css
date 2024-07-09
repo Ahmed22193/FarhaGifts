@@ -1,0 +1,1148 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right, #403B4A 0%, #E7E9BB  51%, #403B4A  100%);
+}
+.container{
+    border: #f0efef 4px solid;
+    background-color: #eee;
+    margin: 0 auto;
+    border-color: #ffffff00 gold;
+    border-radius: 15px;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    background-color: gold;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    box-shadow: 1px 1px 10px 2px rgb(0, 0, 0);
+    border-radius: 2px;
+    z-index: 5;
+}
+nav h3{
+    color: #f90ae5;
+    margin-top: 5px;
+    font-size: 2em;
+    cursor: pointer;
+}
+nav::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 5px;
+    width: 100%;
+    background-image: linear-gradient(to right , #000000, #cac3ae);
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline;
+}
+ul li a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2em;
+    margin-right: 60px;
+    margin-top: 10px;
+    font-weight: 800;
+    transition: 0.2s;
+    letter-spacing: 5px;
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+ul li a::after{
+    position: absolute;
+    content: "";
+    top: 5px;
+    width:180px;
+    height: 100%;
+    border-radius: 10%;
+    right: 0;
+    background-image: linear-gradient(to left ,rgb(253, 1, 1), gold,rgb(251, 152, 14));
+    transform: skewX(98deg);
+    z-index: -1;
+
+}
+ul li a:hover{
+    font-size: 1.22em;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 2px 3px red;
+}
+.surprise{
+    width: 52px;
+    height: 52px;
+    margin-left: 20%;
+    margin-top: 5px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 0, 221);
+    background-color: #d400ad;
+    /* -------------------------- */
+    display: none;
+    animation: spinner 8s infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    box-shadow: 1px 1px 10px 5px rgb(0, 229, 255);
+}
+@keyframes spinner {
+    0%{
+        transform: rotate(0deg);
+        filter: blur(2px);
+        
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+nav h2{
+    font-size: 2em;
+    margin-left: 60px;
+    margin-top: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    color: black;
+    text-shadow: 2px 2px 1px red;
+    transition: 0.2s;
+    letter-spacing: 4px;
+}
+nav h2:hover{
+    text-shadow: 2px 2px 10px rgb(255, 0, 225);
+    
+}
+/* ------------ ---------------- */
+.card-container a{
+    display: flex;
+    text-decoration: none;
+    direction: rtl;
+    width: 90%;
+    margin: 15px auto;
+    background-color: rgba(255, 0, 0, 0);
+}
+.card-container .card-gifts{
+    width: 100%;
+    color: #000000;
+    background-color: #ffffff00;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 15px;
+    margin: 2vh 0;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+    border-radius: 20px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.card-container .card-gifts:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 4px rgb(0, 0, 0);
+    z-index: 2;
+}
+/* ------------------------------------------------ */
+footer{
+    display: inline;
+    background-color: #000000;
+    min-height: 10vh;
+    width: 100%;
+}
+footer h4{
+    display: flex;
+    color: #d400ad;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    font-size: 2em;
+    background-color: #000000;
+    cursor: pointer;
+    border-top: #d400ad 2px solid;
+}
+.container-card-social{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    background-color: #000000;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.container-card-social h5{
+    display: flex;
+    color: aliceblue;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2em; 
+    color: #fafafa;  
+    transition: 0.3s;
+    margin-top: 10px;
+}
+.container-card-social h5:hover{
+    color: #0a8ef9;
+    cursor: pointer;
+}
+.container-card-social .Social-Media img{
+   width: 70px;
+   background-color: #0a8ef9;
+   border-radius: 50%;
+   border: 2px solid #0a8ef9;
+   
+}
+.container-card-social .Social-Media img:hover{
+    box-shadow: 1px 1px 4px 4px #0a8ef9;
+}
+#whatsapp .whatsapp
+{
+    background-color: greenyellow;
+    border: 2px solid greenyellow;
+    
+}
+#whatsapp .whatsapp:hover{
+    box-shadow: 1px 1px 4px 4px greenyellow;
+}
+#whatsapp h5:hover{
+    color: greenyellow;
+}
+#telephone h5{
+    font-size: 2em;
+    margin-top: 8%;
+    letter-spacing: 3px;
+    text-shadow: 1px 2px 2px red;
+}
+#telephone h5:hover{
+    color: #d805c3;
+    text-shadow: 1px 2px 2px rgb(255, 255, 255);
+}
+/* ====================== products ---------------- */
+.farha-container-boxes{
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #b6b6b6;
+    padding: 10px;
+    grid-template-columns: auto auto auto auto;
+}
+.farha-container-boxes .farha-boxes{
+   background-color: #581047;
+   overflow: hidden;
+   text-align: center;
+   position: relative;
+   margin: 10px;
+   height: 30vh;
+   transition: 0.5s;
+   border-radius: 4px;
+}
+.farha-container-boxes .farha-boxes:hover{
+    box-shadow: 0 0 6px 5px rgb(0, 0, 0);
+    transform: scale(1.1);
+    z-index: 2;
+}
+.farha-container-boxes .farha-boxes h2{
+  margin: 0 0 8px 0;
+  font-size: 2em;
+  color: #f0efef;
+  background-color: #0a8ef9;
+  cursor: default;
+}
+.farha-container-boxes .farha-boxes p{
+   padding-right: 15px; 
+   color: rgb(255, 255, 255);
+   font-weight: 500;
+   font-size: 1.2em;
+   position: absolute;
+   right: 0;
+   max-width: 40%;
+   max-height: 65%;
+   text-align: right;
+}
+.farha-container-boxes .farha-boxes img{
+    width: 60%;
+    height: 75%;
+    margin-top: -8px;
+    position: absolute;
+    left: 0;
+}
+.farha-container-boxes .farha-boxes button{
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 3px;
+  font-size: 1.4em;
+  background-image: linear-gradient(to right ,rgb(0, 110, 220) , rgb(0, 238, 255));
+  border: none;
+  border-radius: 2px;
+  transition: 0.2s;
+}
+.farha-container-boxes .farha-boxes input{  /* 12121212122 */
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 3px;
+    font-size: 1.4em;
+    background-image: linear-gradient(to right ,rgb(0, 110, 220) , rgb(0, 238, 255));
+    border: none;
+    border-radius: 2px;
+    transition: 0.2s;
+    text-align: center;
+  }
+  .farha-container-boxes .farha-boxes input:hover{
+    background-image: linear-gradient(to right ,rgb(220, 0, 194) , rgb(0, 72, 255));
+    color: #eee;
+    
+  }
+.farha-container-boxes .farha-boxes button:hover{
+  background-image: linear-gradient(to right ,rgb(220, 0, 194) , rgb(0, 72, 255));
+  color: #eee;
+  
+}
+/* -------------------------------------------------- */
+/*        Buy thr product          */
+
+.form_list form{
+   
+   height: 100%;
+   width: 100%;
+   padding: 10px;
+}
+.form_list form label{
+    display: block;
+    color: #000000;
+    font-size: 2em;
+    margin-bottom: 18px;
+
+}
+.form_list form input{
+    direction: rtl;
+    margin: 1px auto;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1em;
+    padding: 15px;
+    transition: 0.3s;
+    width: 100%;
+    border: 1px black solid;
+    color: #000000;
+    font-weight: 600;
+}
+.form_list form input:focus{
+    transform: scale(1.05);
+    box-shadow: 0 0 4px 4px rgb(255, 0, 217);
+}
+select{
+    width: 20%;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-right: 10%;
+    text-align: center;
+}
+select:focus{
+    background-color: #d400ad;
+}
+.form_list h2{
+    text-align: center;
+    background-color: #02e6fffb;
+    padding: 5px;
+    width: 97%;
+}
+#submit{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    font-size: 1.8em;border-radius: none;
+    padding-bottom: 30px;
+    bottom: 5px;
+    cursor: pointer;
+    background-image: linear-gradient(to right ,rgb(249, 12, 221) , rgb(0, 255, 242));
+}
+#cancle{
+    cursor: default;
+    font-size: 1.4em;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    border: #ff0000 2px solid;
+    background: #000000;
+    transition: 0.3s;
+    z-index: 5;
+    color: red;
+    border-radius: 0 0 15px 0;
+}
+#cancle:hover{
+    box-shadow: 0 0 2px 2px red;
+}
+form h3{
+    direction: rtl;
+    background-color: #000000;
+    width: 25%;
+    height: 50px;
+    left: 0;
+    z-index: 10;
+    position: absolute;
+    top: 10%;
+    border: 2px solid red;
+    color: #07ff03;
+    text-align: right;
+    font-size: 1.4em;
+    font-weight: 800;
+    padding: 10px;
+}
+/* ---------------- formlist -----------*/
+.parent{
+    background-color: #420af935;
+    min-height: 100vh;
+    position: relative;
+}
+.formlist1{
+    border: 1px solid black;
+    border-radius: 4px;
+    position: absolute;
+    display: block;
+    z-index: 20;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.formlist1 h2{
+    text-align: center;
+    padding: 6px 0;
+    background-image: linear-gradient(to right, #2C3E50 0%, #FD746C  51%, #2C3E50  100%);
+    color: whitesmoke;
+    
+}
+.formlist1 form{
+    padding: 10px 0 6px 0;
+    width: 100%;
+    direction: rtl;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    font-size: 1.2em; 
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.202);
+}
+
+.formlist1 form span{
+    display: block;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 20px;
+    position: relative;
+}
+.formlist1 form span label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 30px;
+    font-size: 0.5em;
+    
+}
+.formlist1 form span input{
+    width: 60%;
+    margin-left: 10%;
+    padding-right: 4px;
+    font-size: 1em;
+    direction: rtl;
+}
+    
+.formlist1 form .submit_list {
+    background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4  51%, #E55D87  100%);
+    margin: 10px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(0, 0, 0);            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    /* display: block; */
+    text-align: center;
+    width: 30%;
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+
+.formlist1 form .submit_list:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+ 
+/* ------------- responsive -------------- */
+/* 
+    background-image: linear-gradient(to right, #D1913C 0%, #FFD194  51%, #D1913C  100%);
+    background-image: linear-gradient(to right, #BA8B02 0%, #181818  51%, #BA8B02  100%);
+    background-image: linear-gradient(to right, #2C3E50 0%, #FD746C  51%, #2C3E50  100%);
+    background-image: linear-gradient(to right, #c21500 0%, #ffc500  51%, #c21500  100%);
+    background-image: linear-gradient(to right, #8e9eab 0%, #eef2f3  51%, #8e9eab  100%);
+    background-image: linear-gradient(to right, #e9d362 0%, #333333  51%, #e9d362  100%);
+
+*/
+
+@media (min-width: 300px) {
+    .container , .formlist1{
+        width: 300px;
+    }
+    .container{
+        border: #ff033e 2px solid;
+        border-radius: 3px;
+    }
+    .farha-container-boxes{
+        font-size: 0.7em;
+        display: grid;
+        width: 100%;
+        background-image: linear-gradient(to right, #20002c 0%, #cbb4d4  51%, #20002c  100%);
+        padding: 10px;
+        grid-template-columns: auto ;
+    }
+    .farha-container-boxes .farha-boxes{
+       background-image: linear-gradient(to right, #c21500 0%, #ffc500  51%, #c21500  100%);
+       overflow: hidden;
+       text-align: center;
+       position: relative;
+       margin: 10px;
+       height: 250px;
+       transition: 0.5s;
+       border-radius: 4px;
+       width: 80%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    nav{
+        border-radius: 3px;
+        border: 2px solid rgb(0, 208, 255);
+        /* font-size: 0.6em; */
+        background-image: linear-gradient(to right, #2C3E50 0%, #FD746C  51%, #2C3E50  100%);
+    }
+    nav h3{
+        display: none;
+    }
+    nav h2{
+        position: absolute;
+        top: 5px;
+        font-size: 1em;
+        left: -45px;
+        
+    }
+    nav ul{
+        position: absolute;
+        right: -40px;
+        font-size: 0.9em;
+
+    }
+    nav ul li a{
+        font-size: 1.2em;
+        margin-left: 5px;
+        text-align: center;
+        position: relative;
+        color: white;
+        border: 0.5px solid rgb(249, 249, 249);
+        border-radius: 5px;
+    }
+    ul li a::after{
+        display: none;
+    }
+    footer{
+        font-size: 0.5em;
+    }
+    body{
+        background-image: linear-gradient(to left, #2C3E50 0%, #FD746C  51%, #2C3E50  100%);
+
+    }
+    .card-container a{
+        font-size: 0.4em;
+    }
+    .farha-container-boxes .farha-boxes p{
+        font-size: 1.2em;
+    }
+    .parent{
+        background-color: #420af935;
+        min-height: 100vh;
+        position: relative;
+    }
+    .formlist1{
+        border: 1px solid black;
+        border-radius: 4px;
+        position: absolute;
+        display: block;
+        z-index: 20;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .formlist1 h2{
+        text-align: center;
+        padding: 6px 0;
+        background-image: linear-gradient(to right, #2C3E50 0%, #FD746C  51%, #2C3E50  100%);
+        color: whitesmoke;
+    }
+    .formlist1 form{
+        padding: 10px 0 6px 0;
+        width: 100%;
+        direction: rtl;
+        margin: 0 auto;
+        display: block;
+        color: white;
+        font-size: 1.2em; 
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.202);
+    }
+    
+    .formlist1 form span{
+        display: block;
+        display: flex;
+        justify-content:space-between;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .formlist1 form span label{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-right: 30px;
+        font-size: 0.5em;
+        
+    }
+    .formlist1 form span input{
+        width: 60%;
+        margin-left: 10%;
+        padding-right: 4px;
+        font-size: 1em;
+        direction: rtl;
+    }
+        
+    .formlist1 form .submit_list {
+        background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4  51%, #E55D87  100%);
+        padding: 10px 20px;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: rgb(0, 0, 0);            
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        /* display: block; */
+        text-align: center;
+        width: 30%;
+        font-size: 0.6em;
+        font-weight: 600;
+        
+      }
+    
+    .formlist1 form .submit_list:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+      }
+}
+@media (min-width: 450px) {
+    .container,.formlist1{
+        width: 400px;
+    }
+    .formlist form .submit_list{
+        width: 80%;
+    }
+    .container{
+        border: #ff033e 2px solid;
+        border-radius: 3px;
+    }
+    .farha-container-boxes{
+        display: grid;
+        width: 100%;
+        background-image: linear-gradient(to right, #20002c 0%, #cbb4d4  51%, #20002c  100%);
+        padding: 10px;
+        grid-template-columns: auto ;
+    }
+    .farha-container-boxes .farha-boxes{
+       background-image: linear-gradient(to right, #c21500 0%, #ffc500  51%, #c21500  100%);
+       overflow: hidden;
+       text-align: center;
+       position: relative;
+       margin: 10px;
+       transition: 0.5s;
+       border-radius: 4px;
+       width: 80%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    nav{
+        border-radius: 3px;
+        border: 2px solid rgb(0, 208, 255);
+        /* font-size: 0.6em; */
+        background-image: linear-gradient(to right, #2C3E50 0%, #FD746C  51%, #2C3E50  100%);
+    }
+    nav h3{
+        display: none;
+    }
+    nav h2{
+        position: absolute;
+        top: 2px;
+        font-size: 1.6em;
+        left: -45px;
+        
+    }
+    nav ul{
+        position: absolute;
+        right: -40px;
+        font-size: 1.3em;
+
+    }
+    nav ul li a{
+        font-size: 1.2em;
+        margin-left: 5px;
+        text-align: center;
+        position: relative;
+        color: white;
+        border: 0.5px solid rgb(249, 249, 249);
+        border-radius: 5px;
+    }
+    
+    ul li a::after{
+        display: none;
+    }
+    footer{
+        font-size: 0.7em;
+    }
+    body{
+        background-image: linear-gradient(to left, #2C3E50 0%, #FD746C  51%, #2C3E50  100%);
+
+    }
+    .card-container a{
+        font-size: 0.8em;
+    }
+    .farha-container-boxes .farha-boxes p{
+        font-size: 1.2em;
+    }
+    .parent{
+        background-color: #420af935;
+        min-height: 100vh;
+        position: relative;
+    }
+    .formlist1{
+        border: 1px solid black;
+        border-radius: 4px;
+        position: absolute;
+        display: block;
+        z-index: 20;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .formlist1 h2{
+        text-align: center;
+        padding: 6px 0;
+        background-image: linear-gradient(to right, #2C3E50 0%, #FD746C  51%, #2C3E50  100%);
+        color: whitesmoke;
+    }
+    .formlist1 form{
+        padding: 10px 0 6px 0;
+        width: 100%;
+        direction: rtl;
+        margin: 0 auto;
+        display: block;
+        color: white;
+        font-size: 1.2em; 
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.202);
+    }
+    
+    .formlist1 form span{
+        display: block;
+        display: flex;
+        justify-content:space-between;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .formlist1 form span label{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-right: 30px;
+        font-size: 0.6em;
+        
+    }
+    .formlist1 form span input{
+        width: 60%;
+        margin-left: 10%;
+        padding-right: 4px;
+        font-size: 1em;
+        direction: rtl;
+    }
+        
+    .formlist1 form .submit_list {
+        background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4  51%, #E55D87  100%);
+        margin: 10px;
+        padding: 10px 25px;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: rgb(0, 0, 0);            
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        /* display: block; */
+        text-align: center;
+        width: 30%;
+        font-size: 0.9em;
+        font-weight: 600;
+      }
+    
+    .formlist1 form .submit_list:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+    }
+}
+@media (min-width: 768px) {
+    .container , .formlist1{
+        width: 750px;
+    }
+    .container{
+        border: #ff033e 2px solid;
+        border-radius: 3px;
+    }
+    .farha-container-boxes{
+        display: grid;
+        width: 100%;
+        background-image: linear-gradient(to right, #20002c 0%, #cbb4d4  51%, #20002c  100%);
+        padding: 10px;
+        grid-template-columns: auto ;
+    }
+    .farha-container-boxes .farha-boxes{
+       background-image: linear-gradient(to right, #c21500 0%, #ffc500  51%, #c21500  100%);
+       overflow: hidden;
+       text-align: center;
+       position: relative;
+       margin: 10px;
+       transition: 0.5s;
+       border-radius: 4px;
+       width: 80%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    nav{
+        border-radius: 3px;
+        border: 2px solid rgb(0, 208, 255);
+        /* font-size: 0.6em; */
+        background-image: linear-gradient(to right, #2C3E50 0%, #FD746C  51%, #2C3E50  100%);
+    }
+    nav h3{
+        display: none;
+    }
+    nav h2{
+        position: absolute;
+        top: 2px;
+        font-size: 1.6em;
+        left: -45px;
+        
+    }
+    nav ul{
+        position: absolute;
+        right: -40px;
+        font-size: 1.3em;
+
+    }
+    nav ul li a{
+        font-size: 1.2em;
+        margin-left: 5px;
+        text-align: center;
+        position: relative;
+        color: white;
+        border: 0.5px solid rgb(249, 249, 249);
+        border-radius: 5px;
+    }
+    
+    ul li a::after{
+        display: none;
+    }
+    .parent{
+        background-color: #420af935;
+        min-height: 100vh;
+        position: relative;
+    }
+    .formlist1{
+        border: 1px solid black;
+        border-radius: 4px;
+        position: absolute;
+        display: block;
+        z-index: 20;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .formlist1 h2{
+        text-align: center;
+        padding: 6px 0;
+        background-image: linear-gradient(to right, #2C3E50 0%, #FD746C  51%, #2C3E50  100%);
+        color: whitesmoke;
+    }
+    .formlist1 form{
+        padding: 10px 0 6px 0;
+        width: 100%;
+        direction: rtl;
+        margin: 0 auto;
+        display: block;
+        color: white;
+        font-size: 1.2em; 
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.202);
+    }
+    
+    .formlist1 form span{
+        display: block;
+        display: flex;
+        justify-content:space-between;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .formlist1 form span label{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-right: 30px;
+        font-size: 1em;
+        
+    }
+    .formlist1 form span input{
+        width: 60%;
+        margin-left: 10%;
+        padding-right: 4px;
+        font-size: 1.1em;
+        direction: rtl;
+    }
+        
+    .formlist1 form .submit_list {
+        background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4  51%, #E55D87  100%);
+        margin: 10px;
+        padding: 10px 40px;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: rgb(0, 0, 0);            
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        /* display: block; */
+        text-align: center;
+        width: 30%;
+        font-size: 1em;
+        font-weight: 600;
+      }
+    
+    .formlist1 form .submit_list:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+      }
+     
+    footer{
+        font-size: 0.7em;
+    }
+    body{
+        background-image: linear-gradient(to left, #2C3E50 0%, #FD746C  51%, #2C3E50  100%);
+
+    }
+    .card-container a{
+        font-size: 0.8em;
+    }
+    
+    .farha-container-boxes .farha-boxes p{
+        font-size: 1.2em;
+    }
+}
+@media (min-width: 992px) {
+    .container , .formlist1{
+        width: 970px;
+    }
+    
+    .container{
+        border: #ff033e 2px solid;
+        border-radius: 3px;
+    }
+    .farha-container-boxes{
+        display: grid;
+        width: 100%;
+        background-image: linear-gradient(to right, #20002c 0%, #cbb4d4  51%, #20002c  100%);
+        padding: 10px;
+        grid-template-columns: auto ;
+    }
+    .farha-container-boxes .farha-boxes{
+       background-image: linear-gradient(to right, #c21500 0%, #ffc500  51%, #c21500  100%);
+       overflow: hidden;
+       text-align: center;
+       position: relative;
+       margin: 10px;
+       transition: 0.5s;
+       border-radius: 4px;
+       width: 75%;
+       margin-left: auto;
+       margin-right: auto;
+       font-size: 1.52em;
+       height: 350px;
+    }
+    nav{
+        height: 90px;
+        border-radius: 3px;
+        border: 2px solid rgb(0, 208, 255);
+        /* font-size: 0.6em; */
+        background-image: linear-gradient(to right, #2C3E50 0%, #FD746C  51%, #2C3E50  100%);
+    }
+    nav h3{
+        display: none;
+    }
+    nav h2{
+        position: absolute;
+        top: 2px;
+        font-size: 2.9em;
+        left: -45px;
+        
+    }
+    nav ul{
+        position: absolute;
+        right: -40px;
+        font-size: 2.5em;
+        
+
+    }
+    nav ul li a{
+        font-size: 1.2em;
+        margin-left: 5px;
+        text-align: center;
+        position: relative;
+        color: white;
+        border: 0.5px solid rgb(249, 249, 249);
+        border-radius: 5px;
+    }
+    
+    ul li a::after{
+        display: none;
+    }
+    footer{
+        font-size: 0.7em;
+    }
+    body{
+        background-image: linear-gradient(to left, #2C3E50 0%, #FD746C  51%, #2C3E50  100%);
+
+    }
+    .card-container a{
+        font-size: 1.9em;
+    }
+    footer{
+        font-size: 1.5em;
+    }
+    .farha-container-boxes .farha-boxes p{
+        font-size: 1.2em;
+    }
+}
+@media (min-width: 1200px) {
+    .container , .formlist1{
+        width: 1170px;
+        width: 90%;
+    }
+    .formlist1{
+        width: 1170px;
+        width: 50%;
+    }
+    .formlist form .submit_list{
+        width: 93%;
+    }
+    .container{
+        border: #ff033e 2px solid;
+        border-radius: 3px;
+    }
+    .farha-container-boxes{
+        display: grid;
+        width: 100%;
+        background-image: linear-gradient(to right, #20002c 0%, #cbb4d4  51%, #20002c  100%);
+        padding: 10px;
+        grid-template-columns: auto ;
+    }
+    .farha-container-boxes .farha-boxes{
+       background-image: linear-gradient(to right, #c21500 0%, #ffc500  51%, #c21500  100%);
+       overflow: hidden;
+       text-align: center;
+       position: relative;
+       margin: 10px;
+       transition: 0.5s;
+       border-radius: 4px;
+       width: 60%;
+       margin-left: auto;
+       margin-right: auto;
+       font-size: 3em;
+       height: 600px;
+    }
+    nav{
+        height: 90px;
+        border-radius: 3px;
+        border: 2px solid rgb(0, 208, 255);
+        /* font-size: 0.6em; */
+        background-image: linear-gradient(to right, #2C3E50 0%, #FD746C  51%, #2C3E50  100%);
+    }
+    nav h3{
+        display: none;
+    }
+    nav h2{
+        position: absolute;
+        top: 2px;
+        font-size: 2.9em;
+        left: -45px;
+        
+    }
+    nav ul{
+        position: absolute;
+        right: -40px;
+        font-size: 2.5em;
+        
+
+    }
+    nav ul li a{
+        font-size: 1.2em;
+        margin-left: 5px;
+        text-align: center;
+        position: relative;
+        color: white;
+        border: 0.5px solid rgb(249, 249, 249);
+        border-radius: 5px;
+    }
+    
+    ul li a::after{
+        display: none;
+    }
+    .formlist{
+        font-size: 1.5em;
+        width: 90%;
+        top: 25%;
+        height: 52%;
+        left: 5%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .formlist form span label{
+        font-size: 1.6em;
+    }
+    footer{
+        font-size: 0.7em;
+    }
+    body{
+        background-image: linear-gradient(to left, #2C3E50 0%, #FD746C  51%, #2C3E50  100%);
+
+    }
+    .card-container a{
+        font-size: 1.9em;
+    }
+    footer{
+        font-size: 1.5em;
+    }
+    .farha-container-boxes .farha-boxes p{
+        font-size: 1.2em;
+    }
+}
